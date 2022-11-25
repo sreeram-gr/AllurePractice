@@ -11,8 +11,8 @@ public class Browser {
 	public static WebDriver driver;
 
 	public void init() {
-		WebDriverManager.edgedriver().setup();
-		driver = new EdgeDriver();
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
 	}
 	
 	public void tearDown() {
