@@ -15,7 +15,7 @@ public class BrowserActions {
         Browser.driver.manage().timeouts().pageLoadTimeout(Duration.ofMinutes(2));
         Browser.driver.get("https://opensource-demo.orangehrmlive.com/");
         Browser.driver.manage().window().maximize();
-        WebElement loginButton = Browser.driver.findElement((By.xpath("//button[@type='submit']"));
+        WebElement loginButton = Browser.driver.findElement(By.xpath("//button[@type='submit']"));
         WebElement username = Browser.driver.findElement(RelativeLocator.with(By.name("username")).above(loginButton));
         WebElement password = Browser.driver.findElement(RelativeLocator.with(By.name("password")).below(username));
         username.sendKeys("Admin");
